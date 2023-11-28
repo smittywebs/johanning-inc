@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Johanning inc.</title>
+  </head>
+  <body>
+    <div>
+      <!-- Navbar -->
+      <nav class="absolute container max-w-lg left-10 top-4">
+        <!-- Flex container -->
+        <div class="flex justify-between">
+          <!-- Menu Items -->
+          <div
+            class="hidden space-x-6 max-w-screen-2xl lg:block text-lg text-black font-bold font-sans"
+          >
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="ourTeam.html" class="whitespace-nowrap hover:underline"
+              >Who We Are</a
+            >
+            <a
+              href="dentalServices.html"
+              class="whitespace-nowrap hover:underline"
+              >Get In touch</a
+            >
+          </div>
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger lg:hidden focus:outline-none left-72 top-6"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="index.html">Home</a>
+            <a href="ourTeam.html">Our Team</a>
+            <a href="dentalServices.html">Dental Services</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="patientInfo.html">Patient Info</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="flex container max-w-7xl">
+        <img
+          style="background-image: url(images/heroImage1.jpg)"
+          class="hidden lg:block bg-no-repeat bg-cover lg:h-screen lg:w-screen 2xl:max-h-[500px] 2xl:max-w-full"
+          src="images/heroImage1.jpg"
+        />
+      </div>
+      <div
+        class="p-6 lg:absolute lg:h-full lg:w-1/4 lg:top-0 lg:right-0 lg:text-center lg:bg-black lg:bg-opacity-50 2xl:max-h-[500px] 2xl:w-1/3 2xl:bg-black"
+      >
+        <h1
+          class="text-4xl text-left lg:text-white pb-8 lg:mt-8 2xl:text-5xl 2xl:pb-20"
+        >
+          Johanning Inc.
+        </h1>
+        <h2 class="flex text-xl text-left lg:text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Laborum pariatur enim natus eos itaque architecto.<br />
+          Numquam pariatur consequatur rerum aliquid,<br />
+          ullam repellendus quibusdam, itaque voluptate in fugit,<br />
+          dolorum nulla error!
+        </h2>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <img
+        class="h-[400px] ml-10 mr-10"
+        src="images/Johanning Inc Logo-2.png"
+        alt=""
+      />
+    </div>
+
+    <!--javacript link-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
