@@ -27,11 +27,11 @@
 .hamburger-middle,
 .hamburger-bottom {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 24px;
   height: 2px;
-  background: #000;
+  top: 0;
+  left: 0;
+  background: #fff;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -46,11 +46,10 @@
 
 .open {
   transform: rotate(90deg);
-  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 
 .open .hamburger-middle {
@@ -58,5 +57,5 @@
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }

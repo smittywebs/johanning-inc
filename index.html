@@ -19,89 +19,85 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
       rel="stylesheet"
     />
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Johanning inc.</title>
   </head>
   <body>
     <div>
-      <!-- Navbar -->
-      <nav class="absolute container max-w-lg left-10 top-4">
-        <!-- Flex container -->
-        <div class="flex justify-between">
-          <!-- Menu Items -->
-          <div
-            class="hidden space-x-6 max-w-screen-2xl lg:block text-lg text-black font-bold font-sans"
-          >
-            <a href="index.html" class="hover:underline">Home</a>
-            <a href="ourTeam.html" class="whitespace-nowrap hover:underline"
-              >Who We Are</a
-            >
-            <a
-              href="dentalServices.html"
-              class="whitespace-nowrap hover:underline"
-              >Get In touch</a
-            >
+          <div id="home" class="hidden md:font-extrabold md:absolute md:flex md:space-x-8 md:mt-6 md:ml-6">
+            <div class="group">
+              <a href="index.html">About</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Careers</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Events</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-black"
+              ></div>
+            </div>
           </div>
-
-          <!-- Hamburger Icon -->
-          <button
-            id="menu-btn"
-            class="block hamburger lg:hidden focus:outline-none left-72 top-6"
-          >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-        </div>
+          <!-- Hamburger Button -->
+          <div class="absolute mt-6 ml-6 md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
 
         <!-- Mobile Menu -->
-        <div class="lg:hidden">
-          <div
-            id="menu"
-            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-          >
-            <a href="index.html">Home</a>
-            <a href="ourTeam.html">Our Team</a>
-            <a href="dentalServices.html">Dental Services</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="patientInfo.html">Patient Info</a>
-            <a href="contact.html">Contact</a>
-          </div>
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+        >
+          <a href="home" class="hover:text-pink-500">Home</a>
+          <a href="index.html" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
         </div>
-      </nav>
-      <div class="flex container max-w-7xl">
+      <div class="flex">
         <img
           style="background-image: url(images/heroImage1.jpg)"
-          class="hidden lg:block bg-no-repeat bg-cover lg:h-screen lg:w-screen 2xl:max-h-[500px] 2xl:max-w-full"
-          src="images/heroImage1.jpg"
+          class="bg-no-repeat bg-cover lg:h-screen lg:w-screen 2xl:max-w-full"
+          src="images/heroImageLargeScreen.jpeg"
         />
       </div>
       <div
-        class="p-6 lg:absolute lg:h-full lg:w-1/4 lg:top-0 lg:right-0 lg:text-center lg:bg-black lg:bg-opacity-50 2xl:max-h-[500px] 2xl:w-1/3 2xl:bg-black"
+        class="p-6 lg:absolute lg:h-full lg:w-1/4 lg:top-0 lg:right-0 lg:text-center lg:bg-black lg:bg-opacity-50"
       >
-        <h1
-          class="text-4xl text-left lg:text-white pb-8 lg:mt-8 2xl:text-5xl 2xl:pb-20"
-        >
+        <h1 id="about" class="text-4xl text-left lg:text-white pb-8 lg:mt-8 2xl:text-5xl">
           Johanning Inc.
         </h1>
-        <h2 class="flex text-xl text-left lg:text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-          Laborum pariatur enim natus eos itaque architecto.<br />
-          Numquam pariatur consequatur rerum aliquid,<br />
-          ullam repellendus quibusdam, itaque voluptate in fugit,<br />
-          dolorum nulla error!
-        </h2>
+        <div class="2xl:mt-36">
+          <h2
+            class="flex text-xl text-left lg:text-white 2xl:text-3xl 2xl:tracking-widest"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Laborum pariatur enim natus eos itaque architecto.<br />
+            Numquam pariatur consequatur rerum aliquid,<br />
+            ullam repellendus quibusdam, itaque voluptate in fugit,<br />
+            dolorum nulla error!
+          </h2>
+        </div>
       </div>
     </div>
-    <div class="flex items-center">
-      <img
-        class="h-[400px] ml-10 mr-10"
-        src="images/Johanning Inc Logo-2.png"
-        alt=""
-      />
-    </div>
 
-    <!--javacript link-->
-    <script src="js/script.js"></script>
+    <div class="">
+      <img id="index.html" src="images/Johanning Inc Logo-2.png" alt="">
+    </div>
+    
   </body>
 </html>
