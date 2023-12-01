@@ -4,13 +4,13 @@
 
 @layer base {
   h1 {
-    font-family: "lato", system-ui, sans-serif;
+    font-family: "poppins", system-ui, sans-serif;
   }
   h2 {
-    font-family: "poppins", system-ui, sans-serif;
+    font-family: "sans", system-ui, sans-serif;
   }
   a {
-    font-family: "poppins", system-ui, sans-serif;
+    font-family: "sans", system-ui, sans-serif;
   }
 }
 
