@@ -1242,6 +1242,10 @@ a {
     background-image: none;
   }
 
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
@@ -1263,6 +1267,14 @@ a {
 @media (min-width: 1280px) {
   .xl\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .xl\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:pb-20 {
+    padding-bottom: 5rem;
   }
 }
 
@@ -1300,6 +1312,10 @@ a {
   .\32xl\:bg-slate-300 {
     --tw-bg-opacity: 1;
     background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+  }
+
+  .\32xl\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .\32xl\:text-2xl {
